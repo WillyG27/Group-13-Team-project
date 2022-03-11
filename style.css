@@ -1,75 +1,93 @@
-/*#temp{
-	border: 2px;
-	border-style: solid;
-	border-color: #d1011b;
-}*/
 
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    float: right;
+    
+  }
 
-body{
-  background-color: #ffffff;
+  .navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 60px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: rgb(15, 15, 15);
+    color: white;
+  }
+  
+  .navbar a.logo {
+    background-color: #095dbe;
+    color: white;
+  }
+
+  .cropActivity {
+      font-size: 50px;
+      font-family: Arial, Helvetica, sans-serif; 
+      float: left;
+      width: 100%;
+  }
+
+.background {
+    background: rgb(99, 95, 95);
+    width: 100%;
+    height: 800px;
+}
+.field1 {
+    background: grey;
+    margin: 10px auto;
+    border-radius: 45px;
+    width: 45%;
+    height: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+   float: left;
 }
 
-
-.header{
-  margin-top: 20px;
-  margin-left: 30px;
+.field1-name {
+    font-family: fantasy;
+    font-size: 30x; 
+    color: black;
+    padding: 10px;
+    text-align: center;
 }
 
-
-.navbar{
-	position: fixed;
-	z-index: 1;
-	width: 100%;
-	margin-top: 50px;
-	background-color: rgb(240, 236, 236) !important;
-}
-.nav-link{
-	margin-left: 450px;
-	margin-right: 200px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
-	color: black !important;
-}
-.nav-link:hover{
-	color: #d1011b!important;
-	font-weight: bold;
+.field1_text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18x; 
+    color: black;
+    padding: 10px;
+    text-align: center;
 }
 
-
-.sub-header{
-  margin-top: 160px;
-  text-align: center;
+.field2 {
+    background: grey;
+    margin: 10px auto;
+    border-radius: 45px;
+    width: 45%;
+    height: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+    float: right;
 }
 
-
-input{
-  width: 130px;
+.field2-name {
+    font-family: fantasy;
+    font-size: 20px; 
+    color: black;
+    padding: 10px;
+    text-align: center;
 }
 
-
-hr{
-  margin-left: 800px;
-  margin-right: 800px;
-}
-
-
-.add_submit{
-  margin-left: 20px;
-}
-
-.add_cancel{
-  margin-left: 20px;
-}
-
-
-.add_box{
-  position: absolute;
-  height: 420px;
-  width: 410px;
-  border:0px solid black;
-  border-radius:25px;
-  background-color: rgba(148, 230, 255, 0.623);
-  z-index: -1;
-  top: 290px;
-  left: 750px;
+.field2_text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18x; 
+    color: black;
+    padding: 10px;
+    text-align: center;
 }
