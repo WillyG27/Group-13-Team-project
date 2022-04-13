@@ -1,0 +1,176 @@
+body {
+  background-color: #ffffff;
+}
+
+
+.header{
+  position: absolute;
+  top: 3%;
+  left: 2%;
+}
+
+
+.index_field_nav {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  transform: translate(-65%, -70%);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.index_crop_activity_nav {
+  position: absolute;
+  top: 35%;
+  right: 25%;
+  transform: translate(-65%, -75%);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+
+.field_info {
+  position: absolute;
+  top: 44%;
+  left: 24%;
+}
+.crop_activity_info {
+  position: absolute;
+  top: 40%;
+  right: 23%;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-left: 75px;
+  background:#d3d3d3;
+  margin-top: 105px;
+}
+.nav ul {
+  display: flex;
+  margin-top: 12px;
+}
+.nav li {
+  list-style: none;
+}
+a {
+  color: #940000;
+}
+.nav a {
+  padding-right:100px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #940000;
+}
+.nav:hover {
+  color: #d8b90a;
+}
+
+
+.sub-header {
+  position: absolute;
+  top: 25%;
+  left: 46%;
+}
+.crop_activity_sub-header {
+  position: absolute;
+  top: 25%;
+  left: 43%;
+}
+
+
+
+.displayed {
+  margin-top: 160px;
+}
+.displayed_result {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-left: 75px;
+  background:#ececec;
+  margin-top: 30px;
+}
+.displayed_result ul {
+  display: flex;
+  margin-top: 12px;
+}
+.displayed_result li {
+  list-style: none;
+  padding-right:100px;
+}
+.displayed_result_info {
+  max-width: 600px;
+}
+.displayed_update {
+  margin-top: 30px;
+  padding-left: 100px;
+}
+.displayed_delete {
+  margin-top: 30px;
+}
+.add {
+  display: flex;
+  align-content: center;
+  margin-left: 45%;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.add a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+
+.add_input_1 {
+  position: absolute;
+  top: 40%;
+  left: 43%;
+}
+.add_input_2 {
+  position: absolute;
+  top: 47%;
+  left: 43%;
+}
+.add_input_3 {
+  position: absolute;
+  top: 54%;
+  left: 43%;
+}
+.add_input_4 {
+  position: absolute;
+  top: 61%;
+  left: 43%;
+}
+.add_input_5 {
+  position: absolute;
+  top: 68%;
+  left: 43%;
+}
+.add_input_6 {
+  position: absolute;
+  top: 75%;
+  left: 43%;
+}
+
+.field_input_submit {
+  position: absolute;
+  top: 63%;
+  left: 48%;
+}
+
+.crop_activity_input_submit {
+  position: absolute;
+  top: 83%;
+  left: 48%;
+}
+
+.error {
+  color: red;
+}
