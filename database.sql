@@ -4,7 +4,6 @@ USE arable_land_manager;
 
 CREATE TABLE field (
 	field_id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	field_name VARCHAR(255),
     size VARCHAR(255),
     soil_type VARCHAR(255)
 );
