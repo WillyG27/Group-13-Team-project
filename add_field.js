@@ -32,7 +32,7 @@ router.get('/add', function(req, res, next){
 router.post('/add', function(req, res, next) {
   var field_id = req.body.field_id
   var size = req.body.size
-  var soil_type = parseFloat(req.body.soil_type)
+  var soil_type = req.body.soil_type
   //var soil_type = parseFloat(req.body.soil_type)
   var connection = new MySql({
     host: connection_info.host,
