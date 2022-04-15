@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+   <link rel="stylesheet" href="/stylesheets/style.css" />
+
+
+    <title>Field page</title>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="field.html">Fields</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="crop_activity.html">Field Crop Activities</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+
+
+
+
+
+    <div class="row" id="contain">
+      <%for (var  i=0; i < field.length; i++){ %>
+        <%= field.field_id%>
+          <div class="col-sm-6">
+             <div class="card">
+               <div class="displayed_result card-body">
+
+                   <h5 class="card-title">Field : <%= field[i].field_id %></h5>
+                 <ul >
+
+                    Size: <%= field[i].size %>
+                    <br>
+
+                    Soil type: <%= field[i].soil_type %>
+
+                </ul>
+
+                <div class="vstack gap-2 col-md-5 mx-auto">
+
+                  <form  action="/edit" method="get">
+                    <input type="hidden" name="field_id" value="<%= field[i].field_id%>">
+                      <button type="submit" class="btn btn-secondary" id="edit_btn"> Edit Info</button>
+                  </form>
+
+
+                  <form class="" action="/delete" method="post">
+                    <input type="hidden" name="field_id" value="<%= field[i].field_id%>">
+                    <button type="submit" class="btn btn-outline-secondary" id="del_btn">Delete</button>
+                  </form>
+                </div>
+               </div>
+
+             </div>
+          </div>
+      <%}%>
+
+    </div>
+
+
+
+
+    <div class="btn_contain">
+        <button class="button button1" id="btn_id" >+ ADD Field</button>
+    </div>
+
+
+</body>
+</html>
