@@ -23,12 +23,7 @@
     <form action="/crop_activity/add" method="post">
       <div class="add_input_1">
         <label for="start_date">Start date - </label>
-        <!--<input type="date" id="start_date" onclick="myFunction()">-->
         <input id="start_date" type="text" name="start_date"/>
-        <!--<select id="start_date" name="start_date">
-          <option id ="start_date" value="start_date">d</option>
-        </select>-->
-        <!--<p id="start_date" name="start_date" value="start_date"></p><!--causing add problem-->
       </div>
       <div class="add_input_2">
         <label>Next recommended crop:</label>
@@ -49,7 +44,6 @@
       </div>
       <div class="add_input_4">
         <label>Estimated ready for harvesting time - </label>
-        <!--<label id="estimated_finish_date"></label>-->
         <input id="estimated_finish_date" type="text" name="estimated_finish_date"/>
       </div>
       <div class="add_input_5">
@@ -62,59 +56,7 @@
       </div>
 
       <script>
-        /*
-        //recommended crop and estimated finish date combined function (old)
-        function add_months(date, months) {
-          var d = date.getDate();
-          date.setMonth(date.getMonth() + +months);
-          if (date.getDate() != d) {
-            date.setDate(0);
-          }
-          return date;
-        }
 
-        document.getElementById("start_date").innerHTML = add_months(new Date(),0).toString();
-        
-        function recommeneded_crop_function() {
-          var c = document.getElementById("crop_selection").value;
-          if (c == "Blank") {
-            document.getElementById("the_Recommended_crop").innerHTML = "";
-          }
-          else if (c == "Wheat") {
-            document.getElementById("the_Recommended_crop").innerHTML = "Peas" + c;
-            document.getElementById("estimated_finish_date").innerHTML = add_months(new Date(),4).toString();
-          }
-          else if (c == "Potato") {
-            document.getElementById("the_Recommended_crop").innerHTML = "Wheat" + c;
-            document.getElementById("estimated_finish_date").innerHTML = add_months(new Date(),3).toString();
-          }
-          else if (c == "Maize") {
-            document.getElementById("the_Recommended_crop").innerHTML = "Potato" + c;
-            document.getElementById("estimated_finish_date").innerHTML = add_months(new Date(),5).toString();
-          }
-          else if (c == "Carrot") {
-            document.getElementById("the_Recommended_crop").innerHTML = "Maize" + c;
-            document.getElementById("estimated_finish_date").innerHTML = add_months(new Date(),3).toString();
-          }
-          else if (c == "Barley") {
-            document.getElementById("the_Recommended_crop").innerHTML = "Carrot" + c;
-            document.getElementById("estimated_finish_date").innerHTML = add_months(new Date(),4).toString();
-          }
-          else if (c == "Cabbage") {
-            document.getElementById("the_Recommended_crop").innerHTML = "Barley" + c;
-            document.getElementById("estimated_finish_date").innerHTML = add_months(new Date(),2).toString();
-          }
-          else if (c == "Peas") {
-            document.getElementById("the_Recommended_crop").innerHTML = "Cabbage" + c;
-            document.getElementById("estimated_finish_date").innerHTML = add_months(new Date(),2).toString();
-          }
-          else {
-            document.getElementById("the_Recommended_crop").innerHTML = "";
-          }
-        }
-        */
-
-        
         function recommeneded_crop_function() {
           var c = document.getElementById("crop_selection").value;
           if (c == "Blank") {
@@ -156,41 +98,9 @@
           return date;
         }
 
-        //document.getElementById("start_date").innerHTML = add_months(new Date(),0).toString();
-        //document.getElementById("start_date").innerHTML = "lf";
         document.getElementById("start_date").value = add_months(new Date(),0).toString();
         document.getElementById("start_date").defaultValue = window.location.href.substring(91);
         
-        /*function estimated_finish_function() {
-          var c = document.getElementById("crop_selection").value;
-          if (c == "Blank") {
-            document.getElementById("estimated_finish_date").innerHTML = "";
-          }
-          else if (c == "Wheat") {
-            document.getElementById("estimated_finish_date").innerHTML = add_months(new Date(),4).toString();
-          }
-          else if (c == "Potato") {
-            document.getElementById("estimated_finish_date").innerHTML = add_months(new Date(),3).toString();
-          }
-          else if (c == "Maize") {
-            document.getElementById("estimated_finish_date").innerHTML = add_months(new Date(),5).toString();
-          }
-          else if (c == "Carrot") {
-            document.getElementById("estimated_finish_date").innerHTML = add_months(new Date(),3).toString();
-          }
-          else if (c == "Barley") {
-            document.getElementById("estimated_finish_date").innerHTML = add_months(new Date(),4).toString();
-          }
-          else if (c == "Cabbage") {
-            document.getElementById("estimated_finish_date").innerHTML = add_months(new Date(),2).toString();
-          }
-          else if (c == "Peas") {
-            document.getElementById("estimated_finish_date").innerHTML = add_months(new Date(),2).toString();
-          }
-          else {
-            document.getElementById("the_Recommended_crop").innerHTML = "";
-          }
-        }*/
         function estimated_finish_function() {
           var c = document.getElementById("crop_selection").value;
           if (c == "Blank") {
