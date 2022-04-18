@@ -15,8 +15,7 @@ router.get('/', function(req, res, next) {
   })
   var crop_activity = connection.query('select * from field inner join crop_activity on field.field_id = crop_activity.field_id;')
 
-  //res.render('add_field', { title: 'Field Crop Activity List', crop_activity: crop_activity, page_header: '', link: '' });
-  res.render('index');
+  res.render('index', { title: 'Field Crop Activity List', crop_activity: crop_activity, page_header: '', link: '' });
 });
 
 
