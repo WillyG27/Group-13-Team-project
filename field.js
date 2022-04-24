@@ -15,7 +15,7 @@ router.get('/field', function(req, res, next) {
  var con=mysql.createConnection({
     host:'localhost',
     user:'root',
-    password:'2002',
+    password:'',
     database:'arable_land_manager'
  });
  con.connect(function(err){
@@ -45,7 +45,7 @@ router.get('/field', function(req, res, next) {
   var con=mysql.createConnection({
      host:'localhost',
      user:'root',
-     password:'2002',
+     password:'',
      database:'arable_land_manager'
   });
   con.connect(function(err){
@@ -78,7 +78,7 @@ router.get('/edit',function(req,res){
     var con=mysql.createConnection({
        host:'localhost',
        user:'root',
-       password:'2002',
+       password:'',
        database:'arable_land_manager'
     });
 
@@ -115,7 +115,7 @@ router.post('/edit', function(req,res,next){
     var con=mysql.createConnection({
        host:'localhost',
        user:'root',
-       password:'2002',
+       password:'',
        database:'arable_land_manager'
     });
 
@@ -140,7 +140,7 @@ router.post("/delete", function(req,res,next){
   var con=mysql.createConnection({
      host:'localhost',
      user:'root',
-     password:'2002',
+     password:'',
      database:'arable_land_manager'
   });
 
